@@ -3,15 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MapComponent } from './map/map.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
+import { PageAdminComponent } from './admin/page-admin/page-admin.component';
+import { PageHomeComponent } from './main/page-home/page-home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    PageAdminComponent,
+    PageHomeComponent
   ],
   imports: [
     BrowserModule,
