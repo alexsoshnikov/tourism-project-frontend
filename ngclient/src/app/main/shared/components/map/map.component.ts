@@ -18,11 +18,11 @@ export class MapComponent implements OnInit {
   ngOnInit() {
     this.mapService.getData().subscribe(map => (this.dataMap = map));
 
-    // this.routes = [
-    //   'метро Арбатская',
-    //   'Красные ворота, Москва',
-    //   'метро Парк Культуры'
-    // ]
+    this.routes = [
+      'метро Арбатская',
+      'Красные ворота, Москва',
+      'метро Парк Культуры'
+    ]
   }
 
 }

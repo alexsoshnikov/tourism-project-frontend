@@ -3,23 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
-import { AngularYandexMapsModule } from 'angular8-yandex-maps';
-import { PageAdminComponent } from './admin/page-admin/page-admin.component';
 import { PageHomeComponent } from './main/page-home/page-home.component';
+import { MainLayoutComponent } from './main/shared/main-layout/main-layout.component';
+import { PageErrorMain } from './common/page-error/page-error.component';
+import { MapComponent } from './main/shared/components/map/map.component';
+import { SharedModule } from './common/shared.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageAdminComponent,
-    PageHomeComponent
+    PageHomeComponent,
+    MainLayoutComponent,
+    PageErrorMain,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    AngularYandexMapsModule.forRoot('38e8a410-c451-446c-8389-f45e57f1e22f')
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
